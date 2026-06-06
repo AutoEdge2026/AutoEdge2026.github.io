@@ -929,14 +929,26 @@ Cambridge, UK</span></p>
             
                 <!-- Session 1 -->
                 <div class="program-session">
-                    <div class="session-header">
-                        <h3 class="session-title">Keynote Speaker</h3>
+                    <!--<div class="session-header">
+                        <h3 class="session-title">Opening Remarks</h3>
                          <div class="item-time">
-                            <!-- 01:30 pm - 02:30 pm -->
+                            09:00 am - 09:15 am
                         </div>
-                        <!-- <strong> Session Chair:</strong> Dr. Tomasz Szydlo, Newcastle University, UK. -->
-                    </div>
+                        <strong> Session Chair:</strong> Dr. Tomasz Szydlo, Newcastle University, UK. 
+                    </div> -->
                     
+				<div class="break-session">
+                    <h3 class="break-title">Opening remarks</h3>
+                    <strong> Session Chair:</strong> Dr. Tomasz Szydlo, Newcastle University, UK. 										
+                    <p class="break-description">9:00 am - 9:15 am</p>
+                </div>
+					
+                <div class="break-session">
+                    <h3 class="break-title">Keynote</h3>
+                    <p class="break-description">9:15 am - 10:00 am</p>
+                </div>
+					
+					
                     <div class="program-item">
                         <div class="item-time"></div>
                         <div class="item-content">
@@ -982,7 +994,6 @@ Cambridge, UK</span></p>
                     </div>
                     
                     <!-- <div class="program-item">
-                        
                         <div class="item-content">
                             <h4 class="item-title">Paper 1 (on-site): Automated Dynamic AI Inference Scaling on
 HPC-Infrastructure: Integrating Kubernetes, Slurm and vLLM</h4>
@@ -1000,6 +1011,89 @@ concurrent requests, incurring only an overhead of approximately
                             </div>
                         </div>
                     </div> -->
+
+                <div class="break-session">
+                    <h3 class="break-title">Technical Session 1</h3>
+                </div>					
+
+
+                    <div class="program-item">
+                        <div class="item-content">
+                            <h4 class="item-title">Paper 1: SecureNet: Energy-Proportional Autonomic Self-Protection on Battery-Powered WSN Cluster Heads</h4>
+                            <div class="item-time">10:00 am - 10:15 am</div>
+                            <p class="item-speaker">Authors: Sukumarn Sankeawthong, Jun Niu, Xudong Cao, Shangru Zhao, and Yuqing Zhang</p>
+                            <div class="item-description">
+                                <p style="text-align: justify;"><strong>Abstract:</strong> Battery-powered wireless sensor networks (WSNs) cluster heads (CHs) require autonomic self-protection under strict autonomy envelopes, yet many intrusion detection system (IDS) pipelines assume budgets beyond CH-class nodes. We present SecureNet, an energy-proportional co-design pairing offline RF-assisted feature selection with a compact LSTM temporal head and leakage-safe SMOTE-NearMiss within training folds for class imbalance. On WSN-DS and WSN-BFSF, SecureNet reduces input dimensionality by 68% (19→6), achieving 31% lower emulated latency and 31% lower peak inference memory than an LSTM-only baseline under identical emulated conditions, while preserving near-ceiling detection (up to 99.98% accuracy, 0.01–0.02% FPR). A reproducible QEMU/ARM-class profiling harness establishes these relative improvements under controlled, comparable conditions (ARMv7-A reference guest; not equivalent to the target ESP32-S3/Xtensa LX7); absolute on-device values remain to be validated. As a design-study reference, hardware-informed energy projections using ESP32-S3 datasheet figures yield 0.95–1.90 mJ/decision (MCU-class)—an order-of-magnitude indicator that SecureNet is compatible with the target autonomy envelope, pending on-device validation. SecureNet offers a transferable co-design lesson: semantic pruning before temporal modeling enables continuous self-protection within explicit mJ/ms/MB envelopes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="program-item">
+                        <div class="item-content">
+                            <h4 class="item-title">Paper 2: Agentic Performance at the Edge: Insights from Benchmarking</h4>
+                            <div class="item-time">10:15 am - 10:30 am</div>
+                            <p class="item-speaker">Authors: Shiqiang Wang and Herbert Woisetschläger</p>
+                            <div class="item-description">
+                                <p style="text-align: justify;"><strong>Abstract:</strong> Agentic artificial intelligence (AI) is a natural fit for Internet of Things (IoT) and edge systems, but edge deployments are often constrained to models around 8 billion parameters or smaller. An important question is: How much agentic-task quality is lost when model size is constrained by memory, power, and latency budgets? To address this question, in this paper, we provide an initial empirical study considering edge-focused model scaling, general-purpose versus coder-oriented model effects, and tool-enabled execution under a fixed protocol. We introduce a domain-conditioned evaluation methodology, an implementation-grounded analysis of model-tool interactions, practical guidance for model selection under constraints, and an analysis of failure modes that reveals distinct semantic versus execution failure patterns across model families. Our core finding is that edge-agent quality is not a simple function of parameter count. Robust deployment depends on the joint design of model choice and tool workflow. Domain-conditioned analysis reveals Pareto fronts in the accuracy-latency space that can guide strategy selection based on operational priorities.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="break-session">
+                    <h3 class="break-title">Coffee Break &amp; Networking</h3>
+                    <p class="break-description">10:30 am - 11:00 am</p>
+                </div>
+
+                <div class="break-session">
+                    <h3 class="break-title">Technical Session 2</h3>
+                </div>					
+
+                    <div class="program-item">
+                        <div class="item-content">
+                            <h4 class="item-title">Paper 3: In Pursuit of Onboard Satellite Constellation Processing: A Simulated Earth Observation Study</h4>
+                            <div class="item-time">11:00 am - 11:15 am</div>
+                            <p class="item-speaker">Authors: Jacob Hobson, Slimane Merzouk, Shidong Wang, Jon Mills, and Deepayan Bhowmik</p>
+                            <div class="item-description">
+                                <p style="text-align: justify;"><strong>Abstract:</strong> Ground-based processing pipelines for Earth Observation (EO) constellations impose hours-long capture-to-ground latency, limiting their operational utility for time-critical applications. Onboard AI inference has recently been demonstrated in orbit to reduce downlink burden, but the system-level question of how processing should be distributed across a satellite constellation to minimise latency remains largely unaddressed. Using a modular discrete-event simulation framework parameterised against Sentinel-2 mission data and Jetson Nano hardware measurements, we sweep the processor node count from zero to five across three inference models spanning EO scene detection, classification and segmentation, with and without an additional GEO communication relay. Results demonstrate that a single onboard processing node reduces mean end-to-end latency by approximately 65% relative to the ground-only baseline, with a second node contributing a further 9–11%; beyond two nodes, additional satellites yield no reliable latency improvement across any tested model. This improvement arises not from faster inference but from reduced packet size, thereby relieving the contact-window downlink bottleneck, a structural constraint that dominates pipeline latency beyond a small threshold, regardless of processing capacity. The GEO relay independently reduces latency by 96–98% across all processor counts, confirming that link geometry and processing capacity are orthogonal contributors to pipeline performance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="program-item">
+                        <div class="item-content">
+                            <h4 class="item-title">Paper 4: Side-Channel Privacy Attacks on Energy-Efficient Mobile Agents: A Membership Inference Perspective</h4>
+                            <div class="item-time">11:15 am - 11:30 am</div>
+                            <p class="item-speaker">Authors: Ibtisam Ehsan, Jun Niu, and Yuqing Zhang</p>
+                            <div class="item-description">
+                                <p style="text-align: justify;"><strong>Abstract:</strong> On-device mobile agents depend on energy-saving mechanisms—early-exit classifiers, computation pruning, and adaptive routing—to satisfy the battery constraints of always-on deployment. This paper shows that these optimizations inadvertently disclose whether a particular input appeared in the model's training data. We introduce a membership inference attack relying solely on power consumption measurements, requiring no access to model outputs, weights, or gradients. The attacker operates as an unprivileged co-resident application, reading energy data through standard Android kernel interfaces available to any installed app without special permissions, while injecting just 0.5% poisoned samples into the shared training corpus. We evaluate across three mobile architectures, three real-world public datasets (NUS SMS Corpus, GeoLife, ExtraSensory), and three Android device families (Google Tensor, Samsung Exynos, Qualcomm Snapdragon). Attack accuracy ranges from 83.1% to 89.7%, degrading gracefully to 74% under heavy background workloads. A transferability ablation confirms trigger path divergence persists across fine-tuning depths (Pearson r = 0.91). Execution-path defenses reduce accuracy to 67%–70% at under 2.5% utility cost, establishing path-level privacy as a first-class design requirement in mobile inference.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="program-item">
+                        <div class="item-content">
+                            <h4 class="item-title">Paper 5: PhysioAgent: An Uncertainty-Driven Adaptive Agent for Physiological Comfort Recommendation</h4>
+                            <div class="item-time">11:30 am - 11:45 am</div>
+                            <p class="item-speaker">Authors: Yangyang Wang, Abdolrahman Peimankar, Petteri Nurmi, Agustin Zuniga, Sasu Tarkoma, and Naser Hossein Motlagh</p>
+                            <div class="item-description">
+                                <p style="text-align: justify;"><strong>Abstract:</strong> We present PhysioAgent, a spatiotemporal continual-learning agent that learns environment-to-physiology mappings from labeled datasets and transfers this knowledge to smart office environments without physiological occupant data. Integrating an uncertainty-aware TCN+GCN architecture with graph-based spatial reasoning and intra-day adaptation, PhysioAgent transforms raw sensor streams into confidence-bounded physiological comfort estimates and seating recommendations. In a real-world 25-node deployment across four days, we compare naive fine-tuning and experience replay under environmental drift. Both strategies reduce prediction uncertainty within each day through intra-day adaptation, but only the experience replay strategy, by learning from previous-day knowledge, maintains a monotonically decreasing trend across days. By the final task, experience replay reduces HR uncertainty by 16.7% and EDA uncertainty by 26.7% relative to naive fine-tuning, demonstrating robust continual adaptation to drastic environmental and behavioral shifts while generating health-optimized recommendations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="break-session">
+                    <h3 class="break-title">Closing Remarks</h3>
+                    <p class="break-description">11:45 am - 12:00 pm</p>
+                </div>
+
+                <div class="break-session">
+                    <h3 class="break-title">Lunch</h3>
+                    <p class="break-description">12:00 pm</p>
+                </div>
+					
+					
+					
+					
                 </div>
                 
                 <!-- Break -->
